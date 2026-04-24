@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suely Ramirez Foods</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+  <div class="container">
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="background-logo"></div>
+
+      <!-- ROTATING HERO (narrowed) -->
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active" style="background-image: url('images/food.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/beef.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/Chapati.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/mandazi.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/Chicken_wet.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/fish.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/beef_fry.jpg')"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <img src="images/logo.jpg" alt="Logo" class="bg-logo">
+        <h1>Suely Ramirez Foods</h1>
+        <p class="motto">The taste you never tasted</p>
+
+        <div class="services-highlight">
+          <h2>Our Services</h2>
+          <div class="services-grid">
+            <div>🎉 Events &amp; Weddings Catering</div>
+            <div>👨‍👩‍👧 Family Meetings &amp; Celebrations</div>
+            <div>🏠 Home Delivery &amp; Invites</div>
+          </div>
+        </div>
+
+        <button id="orderNowBtn" class="btn big-btn">ORDER NOW • Fast Delivery</button>
+      </div>
+
+      <!-- OFFERS BANNER -->
+      <div id="offersBanner" class="offers-banner">
+        🍽️ <span>Today's Offers</span> 🍽️
+      </div>
+
+      <!-- MENU SECTION - CLEAN UNDER HERO -->
+      <div class="menu-section">
+        <h2 class="menu-title">Our Menu</h2>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="beef">Beef</button>
+          <button class="filter-btn" data-category="chicken">Chicken</button>
+          <button class="filter-btn" data-category="fish">Fish</button>
+          <button class="filter-btn" data-category="salad">Salads &amp; Veg</button>
+          <button class="filter-btn" data-category="fries">Fries</button>
+          <button class="filter-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+
+      <!-- Order Section -->
+      <div class="order-section">
+        <h3>Your Order</h3>
+        <ul id="order-list"></ul>
+        <p id="order-total">Total: Ksh 0</p>
+        <button id="proceed-payment" class="btn">Proceed to Payment</button>
+      </div>
+
+      <footer>
+        <p>📍 Nairobi | Open 8am - 9pm | Delivery Available</p>
+      </footer>
+
+      <button id="toBack" class="arrow right">↑ Swipe up for more</button>
+    </section>
+
+    <!-- Back Page (unchanged) -->
+    <section id="back" class="page">
+      <div class="background-logo"></div>
+      <header>
+        <h2>Welcome Back</h2>
+      </header>
+
+      <div class="back-content">
+        <div class="info">
+          <h3>Contact Us</h3>
+          <p>📞 +254 719530016</p>
+          <p>📧 suelyramirezfoods@gmail.com</p>
+        </div>
+
+        <div class="wallet">
+          <h3>Wallet & Offers</h3>
+          <p>💰 Balance: Ksh 1,200</p>
+          <p>🎁 Current Offer: 10% off Fried Fish</p>
+        </div>
+
+        <div class="ratings">
+          <h3>Comments & Ratings</h3>
+          <textarea placeholder="Leave your feedback..."></textarea>
+          <button class="btn">Submit</button>
+        </div>
+
+        <div class="logout">
+          <button class="btn logout-btn">Log Out</button>
+        </div>
+      </div>
+
+      <button id="toHome" class="arrow left">←</button>
+    </section>
+  </div>
+
+  <div id="mpesa-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

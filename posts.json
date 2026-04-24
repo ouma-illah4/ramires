@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Beef Stew",
+    "price": 250,
+    "image": "images/beef.jpg",
+    "description": "Tender beef cooked in rich tomato gravy.",
+    "category": "Beef",
+    "type": "wet"
+  },
+  {
+    "name": "Beef Fry",
+    "price": 270,
+    "image": "images/beef_fry.jpg",
+    "description": "Pan-fried beef with onions and mild spices.",
+    "category": "Beef",
+    "type": "fry"
+  },
+  {
+    "name": "Beef Boiled",
+    "price": 240,
+    "image": "images/beef_boiled.jpg",
+    "description": "Soft boiled beef with light broth.",
+    "category": "Beef",
+    "type": "boiled"
+  },
+  {
+    "name": "Chicken Fry",
+    "price": 300,
+    "image": "images/beef_fry.jpg",
+    "description": "Crispy golden fried chicken.",
+    "category": "Chicken",
+    "type": "fry"
+  },
+  {
+    "name": "Chicken Stew",
+    "price": 280,
+    "image": "images/chicken_wet.jpg",
+    "description": "Chicken simmered in tomato sauce and herbs.",
+    "category": "Chicken",
+    "type": "wet"
+  },
+  {
+    "name": "Fish Fry",
+    "price": 280,
+    "image": "images/fish.jpg",
+    "description": "Crispy fried tilapia fillet with lemon flavor.",
+    "category": "Fish",
+    "type": "fry"
+  },
+  {
+    "name": "Salad (Kachumbari)",
+    "price": 120,
+    "image": "images/salad.jpg",
+    "description": "Fresh tomato, onion, and chili salad.",
+    "category": "salad",
+    "type": "salad"
+  },
+  {
+    "name": "Vegetables",
+    "price": 100,
+    "image": "images/vegetables.jpg",
+    "description": "Steamed seasonal greens and spinach mix.",
+    "category": "salad",
+    "type": "veg"
+  },
+  {
+    "name": "Fries",
+    "price": 150,
+    "image": "images/fries.jpg",
+    "description": "Crispy golden fries, lightly salted.",
+    "category": "fries",
+    "type": "fries"
+  },
+  {
+    "name": "Cold Blended Juice",
+    "price": 180,
+    "image": "images/juice.jpg",
+    "description": "Freshly blended fruit juice (mango, pineapple, passion).",
+    "category": "Drinks",
+    "type": "juice"
+  }
+]
+
