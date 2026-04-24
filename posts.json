@@ -26,7 +26,7 @@
   {
     "name": "Chicken Fry",
     "price": 300,
-    "image": "images/beef_fry.jpg",
+    "image": "images/chicken.jpg",
     "description": "Crispy golden fried chicken.",
     "category": "Chicken",
     "type": "fry"
@@ -34,7 +34,7 @@
   {
     "name": "Chicken Stew",
     "price": 280,
-    "image": "images/chicken_wet.jpg",
+    "image": "images/Chicken_wet.jpg",
     "description": "Chicken simmered in tomato sauce and herbs.",
     "category": "Chicken",
     "type": "wet"
@@ -80,4 +80,5 @@
     "type": "juice"
   }
 ]
+
 

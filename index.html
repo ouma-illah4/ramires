@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Suely Ramirez Foods</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   
   <div class="container">
 
-    <!-- Home Page -->
     <section id="home" class="page active">
-      <div class="background-logo"></div>
+      
 
-      <!-- ROTATING HERO (narrowed) -->
+      <!-- HERO CAROUSEL - OVERLAY NOW INSIDE -->
       <div class="hero-carousel" id="heroCarousel">
         <div class="hero-slide active" style="background-image: url('images/food.jpg')"></div>
         <div class="hero-slide" style="background-image: url('images/beef.jpg')"></div>
@@ -23,33 +24,29 @@
         <div class="hero-slide" style="background-image: url('images/Chicken_wet.jpg')"></div>
         <div class="hero-slide" style="background-image: url('images/fish.jpg')"></div>
         <div class="hero-slide" style="background-image: url('images/beef_fry.jpg')"></div>
-      </div>
 
-      <div class="hero-overlay">
-        <img src="images/logo.jpg" alt="Logo" class="bg-logo">
-        <h1>Suely Ramirez Foods</h1>
-        <p class="motto">The taste you never tasted</p>
+        <!-- HERO OVERLAY (moved inside carousel) -->
+        <div class="hero-overlay">
+          <img src="images/logo.jpg" alt="Logo" class="bg-logo">
+          <h1>Suely Ramirez Foods</h1>
+          <p class="motto">The taste you never tasted</p>
 
-        <div class="services-highlight">
-          <h2>Our Services</h2>
-          <div class="services-grid">
-            <div>🎉 Events &amp; Weddings Catering</div>
-            <div>👨‍👩‍👧 Family Meetings &amp; Celebrations</div>
-            <div>🏠 Home Delivery &amp; Invites</div>
+          <div class="services-highlight">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+              <div>🎉 Events &amp; Weddings Catering</div>
+              <div>👨‍👩‍👧 Family Meetings &amp; Celebrations</div>
+              <div>🏠 Home Delivery &amp; Invites</div>
+            </div>
           </div>
+
+          <button id="orderNowBtn" class="big-btn">ORDER NOW • Fast Delivery</button>
         </div>
-
-        <button id="orderNowBtn" class="btn big-btn">ORDER NOW • Fast Delivery</button>
       </div>
 
-      <!-- OFFERS BANNER -->
-      <div id="offersBanner" class="offers-banner">
-        🍽️ <span>Today's Offers</span> 🍽️
-      </div>
-
-      <!-- MENU SECTION - CLEAN UNDER HERO -->
       <div class="menu-section">
         <h2 class="menu-title">Our Menu</h2>
+        <div id="offersBanner" class="offers-banner">🍽️ Today's Offers 🍽️</div>
 
         <div class="filter-bar">
           <button class="filter-btn active" data-category="all">All</button>
@@ -64,7 +61,6 @@
         <div class="menu-grid" id="menuGrid"></div>
       </div>
 
-      <!-- Order Section -->
       <div class="order-section">
         <h3>Your Order</h3>
         <ul id="order-list"></ul>
@@ -79,43 +75,45 @@
       <button id="toBack" class="arrow right">↑ Swipe up for more</button>
     </section>
 
-    <!-- Back Page (unchanged) -->
-    <section id="back" class="page">
+      <section id="back" class="page">
       <div class="background-logo"></div>
-      <header>
-        <h2>Welcome Back</h2>
-      </header>
-
+      <header><h2>Welcome Back</h2></header>
       <div class="back-content">
+
+        <!-- CONTACT US + SOCIAL ICONS -->
         <div class="info">
           <h3>Contact Us</h3>
           <p>📞 +254 719530016</p>
           <p>📧 suelyramirezfoods@gmail.com</p>
+          
+          <div class="social-icons" style="margin-top: 15px; display: flex; gap: 15px; justify-content: center; font-size: 1.8rem;">
+            <a href="https://wa.me/254719530016" target="_blank" title="WhatsApp">📱</a>
+            <a href="https://x.com/suelyramirezfoods" target="_blank" title="X (Twitter)">𝕏</a>
+            <a href="https://tiktok.com/@suelyramirezfoods" target="_blank" title="TikTok">🎵</a>
+            <a href="https://facebook.com/suelyramirezfoods" target="_blank" title="Facebook">📘</a>
+          </div>
         </div>
 
-        <div class="wallet">
-          <h3>Wallet & Offers</h3>
-          <p>💰 Balance: Ksh 1,200</p>
-          <p>🎁 Current Offer: 10% off Fried Fish</p>
+        <!-- NEW: SHARE YOUR EXPERIENCE + LINK -->
+        <div class="share-experience">
+          <h3>Share Your Experience</h3>
+          <p style="font-size:0.95rem; color:#ccc; margin-bottom:12px;">Upload a link to your cooking video, photo, or story</p>
+          <input type="url" id="experience-link" placeholder="https://your-video-or-photo-link" style="width:100%; padding:12px; border-radius:10px; border:none; background:#333; color:#fff; margin-bottom:10px;">
+          <textarea id="experience-text" placeholder="Tell us about your experience or cooking skills..." rows="3" style="width:100%; padding:12px; border-radius:10px; border:none; background:#333; color:#fff; resize:vertical;"></textarea>
+          
+          <!-- Star Rating -->
+          <div class="star-rating" style="margin:15px 0; text-align:center;">
+            <h4 style="margin-bottom:8px;">Rate our food (1-5 stars)</h4>
+            <span class="star" data-value="1" style="font-size:2rem; cursor:pointer;">☆</span>
+            <span class="star" data-value="2" style="font-size:2rem; cursor:pointer;">☆</span>
+            <span class="star" data-value="3" style="font-size:2rem; cursor:pointer;">☆</span>
+            <span class="star" data-value="4" style="font-size:2rem; cursor:pointer;">☆</span>
+            <span class="star" data-value="5" style="font-size:2rem; cursor:pointer;">☆</span>
+          </div>
+
+          <button class="btn" onclick="submitExperience()">Submit Experience</button>
         </div>
 
-        <div class="ratings">
-          <h3>Comments & Ratings</h3>
-          <textarea placeholder="Leave your feedback..."></textarea>
-          <button class="btn">Submit</button>
-        </div>
-
-        <div class="logout">
-          <button class="btn logout-btn">Log Out</button>
-        </div>
       </div>
-
       <button id="toHome" class="arrow left">←</button>
-    </section>
-  </div>
-
-  <div id="mpesa-overlay"></div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    </section>  
